@@ -38,6 +38,7 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 88px;
       font-size: 16px;
     }
 
@@ -617,6 +618,35 @@
       font-size: 13.5px;
       color: var(--muted);
       line-height: 1.6;
+    }
+
+    .features-promise {
+      margin-top: 32px;
+      padding: 22px 26px;
+      background: var(--surface-el);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: var(--radius-sm);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .features-promise__icon {
+      flex-shrink: 0;
+      color: var(--gold);
+      margin-top: 2px;
+    }
+    .features-promise__text {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .features-promise__text strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .features-promise__text strong.text-gold {
+      color: var(--gold);
     }
 
     /* =============================================
@@ -1839,6 +1869,16 @@
         </div>
 
       </div>
+
+      <div class="features-promise fade-up">
+        <div class="features-promise__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="features-promise__text">
+          <strong class="text-gold">Sin límites artificiales en el alcance.</strong> Las páginas institucionales (sobre nosotros, equipo, contacto, política de privacidad, términos y todas las que el proyecto necesite) se desarrollan <strong>todas las que sean necesarias</strong>. Los ajustes de diseño y contenido durante el desarrollo son <strong>todos los acordados hasta tu aprobación final</strong>. La idea es que el sitio quede impecable, no que se cuenten pantallas ni revisiones.
+        </div>
+      </div>
+
     </div>
   </section>
 
